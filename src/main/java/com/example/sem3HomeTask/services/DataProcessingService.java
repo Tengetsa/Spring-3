@@ -16,10 +16,6 @@ public class DataProcessingService {
         return repository;
     }
 
-    @Autowired
-    private UserRepository repository;
-
-
     public List<User> sortUsersByAge(List<User> users) {
         return users.stream()
                 .sorted(Comparator.comparing(User::getAge))
@@ -43,4 +39,7 @@ public class DataProcessingService {
     {
         repository.getUsers().add(user);
     }
+
+    @Autowired
+    private UserRepository repository;
 }

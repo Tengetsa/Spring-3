@@ -22,5 +22,4 @@ public class UserRepository {
     }
 
     private List<User> users = new ArrayList<>();
-
 }

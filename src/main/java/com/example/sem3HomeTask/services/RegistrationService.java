@@ -20,10 +20,10 @@ public class RegistrationService {
     //region Field
     // Добавляем связь с репозиторием
     @Autowired
-    private UserRepository userRepository;
+    private DataProcessingService dataProcessingService;
 
     @Autowired
-    private DataProcessingService dataProcessingService;
+    private UserRepository userRepository;
 
     // Добавить поля UserService, NotificationService(добавить в IOC контейнер аннотацией
     // @Autowired или через конструктор класса)
