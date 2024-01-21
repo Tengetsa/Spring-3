@@ -26,7 +26,7 @@ public class TaskController {
         tasks.add("sort");
         tasks.add("filter");
         tasks.add("calc");
-        return  tasks;
+        return tasks;
     }
 
     @GetMapping("/sort")//localhost:8080/tasks/sort
@@ -39,7 +39,7 @@ public class TaskController {
     //Подсказка  @GetMapping("/filter/{age}")
     @GetMapping("/filter/{age}")
     public List<User> filterUsersByAge(@PathVariable int age){
-        return service.filterUsersByAge(service.getRepository().getUsers(),age);
+        return service.filterUsersByAge(service.getRepository().getUsers(), age);
     }
 
     //метод calculateAverageAge

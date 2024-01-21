@@ -17,9 +17,10 @@ public class UserRepository {
         this.users = users;
     }
 
-    private List<User> users = new ArrayList<>();
-
     public void addUser(User user) {
         users.add(user);
     }
+
+    private List<User> users = new ArrayList<>();
+
 }
